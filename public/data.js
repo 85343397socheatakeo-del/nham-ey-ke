@@ -1077,6 +1077,10 @@ const NHAM_DATA = {
   }
 };
 
+if (typeof window !== "undefined") {
+  window.NHAM_DATA = NHAM_DATA;
+}
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = NHAM_DATA;
 }

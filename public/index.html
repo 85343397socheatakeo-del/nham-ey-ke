@@ -26,7 +26,7 @@
 
     <!-- Persistent App Header -->
     <header class="app-header">
-      <div class="brand-wrap" id="header-brand">
+      <div class="brand-wrap" id="header-brand" ondblclick="window.nhamApp.promptAdminAccess()" title="Nham Ey Ke">
         <img class="brand-logo-img" src="/samples/nham_ey_ke_logo.png" alt="Nham Ey Ke Logo" onerror="this.style.display='none'" />
         <div>
           <div class="brand-title" id="brand-title">ញ៉ាំអីគេ?</div>
@@ -35,8 +35,8 @@
       </div>
 
       <div class="header-actions">
-        <!-- Live Edit Toggle Button -->
-        <button class="edit-toggle-btn" id="edit-toggle-btn" title="Toggle Edit Mode / កែសម្រួល">
+        <!-- Live Edit Toggle Button (Owner Only - Hidden from visitors) -->
+        <button class="edit-toggle-btn" id="edit-toggle-btn" title="Toggle Edit Mode / កែសម្រួល" style="display:none;">
           <span>✏️</span>
           <span id="edit-toggle-label">Edit</span>
         </button>

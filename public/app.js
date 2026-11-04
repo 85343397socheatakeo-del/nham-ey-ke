@@ -2,10 +2,22 @@
 // Full in-app editing: Change, Add, and Deduce (Remove) Icons, Photos, Text & Categories
 
 (function() {
-  // App Data State
-  let appData = window.NHAM_DATA;
+  // App Data State: Immediately use bundled dataset
+  let appData = (typeof window !== 'undefined' && window.NHAM_DATA) ? window.NHAM_DATA : null;
   let currentLang = localStorage.getItem('nham_lang') || 'kh';
-  let isEditMode = localStorage.getItem('nham_edit_mode') === 'true';
+
+  // Owner-Only Edit Protection (Only the owner can edit)
+  const urlParams = new URLSearchParams(window.location.search);
+  let isOwner = localStorage.getItem('nham_is_admin') === 'true' || 
+                urlParams.get('admin') === 'true' || 
+                urlParams.get('admin') === 'nham2026' || 
+                urlParams.get('edit') === 'true';
+
+  if (isOwner) {
+    localStorage.setItem('nham_is_admin', 'true');
+  }
+
+  let isEditMode = isOwner && (localStorage.getItem('nham_edit_mode') === 'true');
   let currentView = 'home';
   let activeCategoryId = null;
   let activeRecipeId = null;
@@ -79,32 +91,42 @@
     return null;
   }
 
-  // Load Data from Server API or Static JSON
+  // Load Data from LocalStorage, static data.json, or bundled NHAM_DATA
   async function loadAppData() {
-    // 1. Check local storage cache for edits
+    // 1. Check local storage cache if owner made edits
     const localSaved = localStorage.getItem('nham_app_data');
     if (localSaved) {
       try {
         const parsed = JSON.parse(localSaved);
-        if (parsed && parsed.recipes) appData = parsed;
+        if (parsed && parsed.categories && parsed.recipes) {
+          appData = parsed;
+          render();
+          return;
+        }
       } catch (e) {}
     }
 
-    // 2. Fetch from dynamic API or static data.json
+    // 2. Fetch /data.json safely (verifying it is real JSON, not HTML rewrite)
     try {
-      let res = await fetch('/api/data');
-      if (!res.ok) {
-        res = await fetch('/data.json');
-      }
+      const res = await fetch('/data.json');
       if (res.ok) {
-        const remoteData = await res.json();
-        if (remoteData && remoteData.recipes) {
-          appData = remoteData;
+        const contentType = res.headers.get('content-type') || '';
+        if (contentType.includes('application/json')) {
+          const remoteData = await res.json();
+          if (remoteData && remoteData.categories && remoteData.recipes) {
+            appData = remoteData;
+          }
         }
       }
     } catch (e) {
-      console.warn('Using local dataset');
+      console.warn('Using bundled dataset');
     }
+
+    // 3. Fallback to bundled dataset
+    if (!appData && typeof window !== 'undefined' && window.NHAM_DATA) {
+      appData = window.NHAM_DATA;
+    }
+
     render();
   }
 
@@ -123,20 +145,22 @@
     }
   }
 
-  // Load Inbox
+  // Load Inbox safely
   async function loadInbox() {
     try {
-      let res = await fetch('/api/inbox');
-      if (!res.ok) {
-        res = await fetch('/inbox.json');
-      }
+      const res = await fetch('/inbox.json');
       if (res.ok) {
-        inboxMessages = await res.json();
-      } else {
-        inboxMessages = [...(appData.inboxInitial || [])];
+        const contentType = res.headers.get('content-type') || '';
+        if (contentType.includes('application/json')) {
+          inboxMessages = await res.json();
+          updateInboxBadges();
+          return;
+        }
       }
-    } catch (e) {
-      inboxMessages = [...(appData.inboxInitial || [])];
+    } catch (e) {}
+
+    if (appData && appData.inboxInitial) {
+      inboxMessages = [...appData.inboxInitial];
     }
     updateInboxBadges();
   }
@@ -184,13 +208,22 @@
     document.getElementById('nav-search-label').textContent = t(appData.uiText.searchNav);
     document.getElementById('nav-inbox-label').textContent = t(appData.uiText.inboxNav);
 
-    // Update Edit Mode Button
-    editToggleBtn.classList.toggle('active', isEditMode);
-    document.getElementById('edit-toggle-label').textContent = isEditMode 
-      ? (currentLang === 'kh' ? 'កែរួច' : 'Done')
-      : (currentLang === 'kh' ? 'កែប្រែ' : 'Edit');
+    // Update Edit Mode Button (Owner Only - Hidden from regular visitors)
+    if (editToggleBtn) {
+      if (isOwner) {
+        editToggleBtn.style.display = 'inline-flex';
+        editToggleBtn.classList.toggle('active', isEditMode);
+        document.getElementById('edit-toggle-label').textContent = isEditMode 
+          ? (currentLang === 'kh' ? 'កែរួច' : 'Done')
+          : (currentLang === 'kh' ? 'កែប្រែ' : 'Edit');
+      } else {
+        editToggleBtn.style.display = 'none';
+      }
+    }
 
-    editModeBanner.style.display = isEditMode ? 'flex' : 'none';
+    if (editModeBanner) {
+      editModeBanner.style.display = (isOwner && isEditMode) ? 'flex' : 'none';
+    }
   }
 
   // Navigation
@@ -659,7 +692,18 @@
         content = renderHome();
         break;
     }
-    appContainer.innerHTML = content;
+    const footerHtml = `
+      <footer class="app-footer" style="text-align:center; padding:24px 16px 50px; font-size:0.75rem; color:#94a3b8; border-top:1px solid #f1f5f9; margin-top:30px;">
+        <p style="margin:0 0 6px 0; font-weight:600; color:#64748b;">© 2026 ញ៉ាំអីគេ? (Nham Ey Ke) • Khmer Student Cooking Prototype</p>
+        <div style="margin-top:6px;">
+          ${isOwner ? 
+            `<button onclick="window.nhamApp.logoutAdmin()" style="background:#fef2f2; border:1px solid #fecaca; border-radius:12px; padding:4px 12px; font-size:0.72rem; color:#dc2626; cursor:pointer; font-weight:600;">🔒 ចាកចេញពីរបៀប Admin (Lock/Logout)</button>` :
+            `<button onclick="window.nhamApp.promptAdminAccess()" style="background:none; border:none; font-size:0.72rem; color:#94a3b8; cursor:pointer; text-decoration:underline;">ម្ចាស់គេហទំព័រ (Admin Access)</button>`
+          }
+        </div>
+      </footer>
+    `;
+    appContainer.innerHTML = content + footerHtml;
   }
 
   // --- SEARCH ENGINE ---
@@ -1431,6 +1475,29 @@
     }
   }
 
+  function promptAdminAccess() {
+    const code = prompt(currentLang === 'kh' ? 'សូមបញ្ចូលលេខសម្ងាត់ម្ចាស់គេហទំព័រ (Admin Passcode):' : 'Enter Admin Passcode to enable editing:');
+    if (code === 'nham2026' || code === '1234') {
+      isOwner = true;
+      isEditMode = true;
+      localStorage.setItem('nham_is_admin', 'true');
+      localStorage.setItem('nham_edit_mode', 'true');
+      showToast(currentLang === 'kh' ? 'បានផ្ទៀងផ្ទាត់ជោគជ័យ! បើករបៀបកែប្រែ' : 'Admin unlocked! Edit Mode active');
+      render();
+    } else if (code !== null) {
+      showToast(currentLang === 'kh' ? 'លេខកូដមិនត្រឹមត្រូវទេ!' : 'Incorrect passcode!');
+    }
+  }
+
+  function logoutAdmin() {
+    isOwner = false;
+    isEditMode = false;
+    localStorage.removeItem('nham_is_admin');
+    localStorage.removeItem('nham_edit_mode');
+    showToast(currentLang === 'kh' ? 'បានចាកចេញពីរបៀប Admin' : 'Admin logged out');
+    render();
+  }
+
   // Event Listeners
   langToggleBtn.addEventListener('click', () => {
     currentLang = currentLang === 'kh' ? 'en' : 'kh';
@@ -1442,6 +1509,10 @@
   });
 
   editToggleBtn.addEventListener('click', () => {
+    if (!isOwner) {
+      promptAdminAccess();
+      return;
+    }
     isEditMode = !isEditMode;
     localStorage.setItem('nham_edit_mode', isEditMode);
     render();
@@ -1581,6 +1652,8 @@
     deleteRecipe,
     closeEditModal,
     openSearchModal,
+    promptAdminAccess,
+    logoutAdmin,
     // Icon & Photo Management APIs
     selectIconPickerItem,
     deduceIcon,

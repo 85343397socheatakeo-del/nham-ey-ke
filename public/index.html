@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>ញ៉ាំអីគេ? - Nham Ey Ke | Easy Khmer Student Cooking</title>
+  <meta name="description" content="A mobile-first web app to help university students cook easy, affordable Khmer food recipes in their dorm." />
+  <link rel="icon" type="image/png" href="/samples/nham_ey_ke_logo.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <!-- Mobile Viewport Frame (Centered on Desktop, Native on Mobile) -->
+  <div class="phone-viewport">
+    
+    <!-- Phone Top Speaker & Camera Notch -->
+    <div class="phone-notch">
+      <div class="speaker-pill"></div>
+    </div>
+
+    <!-- Edit Mode Active Notification Banner (Hidden by default) -->
+    <div id="edit-mode-banner" class="edit-mode-banner" style="display:none;">
+      <span>✏️ Edit Mode Active — Click any item to modify</span>
+      <button onclick="window.nhamApp.toggleEditMode()" style="background:none; border:none; font-weight:900; cursor:pointer;">✕</button>
+    </div>
+
+    <!-- Persistent App Header -->
+    <header class="app-header">
+      <div class="brand-wrap" id="header-brand">
+        <img class="brand-logo-img" src="/samples/nham_ey_ke_logo.png" alt="Nham Ey Ke Logo" onerror="this.style.display='none'" />
+        <div>
+          <div class="brand-title" id="brand-title">ញ៉ាំអីគេ?</div>
+          <div class="brand-sub" id="brand-sub">សម្រាប់និស្សិត</div>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- Live Edit Toggle Button -->
+        <button class="edit-toggle-btn" id="edit-toggle-btn" title="Toggle Edit Mode / កែសម្រួល">
+          <span>✏️</span>
+          <span id="edit-toggle-label">Edit</span>
+        </button>
+
+        <!-- Dual Language Toggle Pill (Khmer / English) -->
+        <button class="lang-toggle-btn" id="lang-toggle-btn" title="Toggle Language / ប្តូរភាសា">
+          <span class="lang-flag">🇰🇭</span>
+          <span class="lang-label lang-active">ខ្មែរ</span>
+        </button>
+
+        <!-- Search Icon Button -->
+        <button class="icon-btn" id="search-trigger-btn" title="Food Research / ស្រាវជ្រាវមុខម្ហូប">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7" />
+            <line x1="16.5" y1="16.5" x2="21" y2="21" />
+          </svg>
+        </button>
+
+        <!-- Inbox Icon Button -->
+        <button class="icon-btn" id="inbox-header-btn" title="Student Inbox / ប្រអប់សារ">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="M3 8L12 14L21 8" />
+          </svg>
+          <span class="badge-count" id="inbox-badge" style="display:none;">0</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Scrollable Main Content Surface -->
+    <main class="app-main" id="app-container">
+      <!-- Dynamically Rendered via app.js -->
+    </main>
+
+    <!-- Bottom Navigation Bar (Phone Device Native Style) -->
+    <nav class="bottom-nav">
+      <button class="nav-tab-btn active" id="nav-home-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 10.5L12 3L21 10.5V20C21 20.6 20.6 21 20 21H15V15H9V21H4C3.4 21 3 20.6 3 20V10.5Z" />
+        </svg>
+        <span id="nav-home-label">ទំព័រដើម</span>
+      </button>
+
+      <button class="nav-tab-btn" id="nav-search-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7" />
+          <line x1="16.5" y1="16.5" x2="21" y2="21" />
+        </svg>
+        <span id="nav-search-label">ស្រាវជ្រាវ</span>
+      </button>
+
+      <button class="nav-tab-btn" id="nav-inbox-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <path d="M3 8L12 14L21 8" />
+        </svg>
+        <span id="nav-inbox-label">ប្រអប់សារ</span>
+        <span class="nav-badge" id="nav-inbox-badge" style="display:none;">0</span>
+      </button>
+    </nav>
+
+    <!-- Search Modal Drawer -->
+    <div class="search-modal" id="search-modal">
+      <div class="search-sheet">
+        <div class="search-sheet-header">
+          <div class="search-bar-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:18px; height:18px; color:var(--color-muted);">
+              <circle cx="11" cy="11" r="7" />
+              <line x1="16.5" y1="16.5" x2="21" y2="21" />
+            </svg>
+            <input type="text" id="search-input" placeholder="ស្វែងរកមុខម្ហូប ឬគ្រឿងផ្សំ..." autocomplete="off" />
+            <button class="close-search-btn" id="close-search-btn">✕</button>
+          </div>
+        </div>
+        <div class="search-results-list" id="search-results">
+          <!-- Live Filter Results -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Edit Modal for Recipes & Content -->
+    <div class="edit-modal" id="edit-modal">
+      <div class="edit-dialog">
+        <div class="edit-dialog-header">
+          <h3 class="edit-dialog-title" id="edit-modal-title">✏️ Edit Recipe / កែសម្រួលមុខម្ហូប</h3>
+          <button class="edit-dialog-close" onclick="window.nhamApp.closeEditModal()">✕</button>
+        </div>
+        <div class="edit-dialog-body" id="edit-modal-body">
+          <!-- Form generated dynamically -->
+        </div>
+        <div class="edit-dialog-footer" id="edit-modal-footer">
+          <!-- Action buttons generated dynamically -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Toast Notification -->
+    <div class="app-toast" id="app-toast"></div>
+
+  </div>
+
+  <!-- Application Scripts -->
+  <script src="/data.js"></script>
+  <script src="/icons.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "msg-1",
+    "sender": "រៀមច្បង សុខា (DMC Year 4)",
+    "avatarColor": "#E63946",
+    "subject": {
+      "kh": "គន្លឹះទិញម្ហូបនៅផ្សារជិតសាលា",
+      "en": "Tips for Market Shopping Near Campus"
+    },
+    "preview": {
+      "kh": "សួស្តីប្អូនៗ! ទៅផ្សារម៉ោង ៦ល្ងាច បន្លែ និងសាច់លក់បញ្ចុះតម្លៃច្រើន...",
+      "en": "Hello junior students! Visiting the market around 6:00 PM gets you great vegetable discounts..."
+    },
+    "body": {
+      "kh": "សួស្តីប្អូនៗនិស្សិតទាំងអស់គ្នា! សម្រាប់អ្នកដែលនៅបន្ទប់ជួលជិតសាលា បើចង់សន្សំលុយ ចូរទៅផ្សារចន្លោះម៉ោង ៥:៣០ ដល់ ៦:៣០ ល្ងាច។ មីងៗលក់បន្លែ និងត្រី តែងតែលក់ថែម ឬលក់ឡាយឡុងក្នុងតម្លៃត្រឹមពាក់កណ្តាល ជួយឱ្យយើងសន្សំបានច្រើនសម្រាប់ទិញសៀវភៅរៀន!",
+      "en": "Hello fellow university students! If you are staying in a rented dorm room near campus and want to save budget, try hitting local markets between 5:30 PM and 6:30 PM. Vendors often discount fresh herbs, greens, and produce at half price before closing up!"
+    },
+    "date": "2026-10-21 17:30",
+    "unread": true
+  },
+  {
+    "id": "msg-2",
+    "sender": "ក្រុមការងារ ញ៉ាំអីគេ (Nham Ey Ke Team)",
+    "avatarColor": "#2A9D8F",
+    "subject": {
+      "kh": "ស្វាគមន៍មកកាន់ Prototype V1!",
+      "en": "Welcome to Prototype Version 1!"
+    },
+    "preview": {
+      "kh": "សូមស្វាគមន៍និស្សិតទាំងអស់គ្នា! អ្នកអាចស្វែងរកមុខម្ហូប និងផ្ញើសំណួរមកកាន់ពួកយើង...",
+      "en": "Welcome university students! You can search recipes and submit your cooking questions right here..."
+    },
+    "body": {
+      "kh": "សូមស្វាគមន៍មកកាន់កំណែ Prototype ទី ១ នៃគេហទំព័រ «ញ៉ាំអីគេ? Nham Ey Ke»។ គោលបំណងរបស់យើងគឺចង់ជួយនិស្សិតសាកលវិទ្យាល័យកម្ពុជាឱ្យចេះធ្វើម្ហូបញ៉ាំដោយខ្លួនឯង កាត់បន្ថយការញ៉ាំមីកញ្ចប់ ឬអាហារកែច្នៃ Ultra-processed foods និងទទួលបានសុខភាពល្អ!",
+      "en": "Welcome to Version 1 prototype of 'Nham Ey Ke?'! Our mission is to empower Cambodian university students to cook delicious, budget-conscious real food, reducing reliance on instant noodles and ultra-processed takeout."
+    },
+    "date": "2026-10-21 12:00",
+    "unread": false
+  }
+]

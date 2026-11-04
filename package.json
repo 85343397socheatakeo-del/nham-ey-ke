@@ -1,0 +1,18 @@
+{
+  "name": "nham-ey-ke",
+  "version": "1.0.0",
+  "description": "Easy Khmer Food Recipes Web App for University Students",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "khmer-food",
+    "cooking",
+    "students",
+    "recipes",
+    "prototype"
+  ],
+  "author": "Nham Ey Ke Team",
+  "license": "MIT"
+}

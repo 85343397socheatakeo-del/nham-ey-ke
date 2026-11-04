@@ -1,0 +1,1078 @@
+{
+  "app": {
+    "name": {
+      "kh": "ញ៉ាំអីគេ?",
+      "en": "Nham Ey Ke?"
+    },
+    "subtitle": {
+      "kh": "Nham Ey Ke - ធ្វើម្ហូបបែបស្រួលៗសាកសមសម្រាប់និស្សិត",
+      "en": "Khmer Student Cooking Made Super Easy"
+    },
+    "tagline": {
+      "kh": "គេហទំព័រនេះដើរតួជាសៀវភៅមុខម្ហូបជំនាន់ថ្មីសម្រាប់សិស្ស និស្សិត ដែលមានបំណងចម្អិនអាហារខ្មែរយើងញាំនៅផ្ទះដោយខ្លួនឯងតាមបែបស្រួលៗ សន្សំសំចៃ ល្អសម្រាប់សុខភាព និងឆ្ងាញ់ពិសារ",
+      "en": "Helping university students cook authentic, easy, and budget-friendly Khmer meals right in their dorm room"
+    },
+    "logo": "/samples/Eat_good__feel_good__spend_lest.png",
+    "heroArtwork": "/samples/blank-profile-picture-973460_1280.png",
+    "momArtwork": "/samples/mother_cooking.png"
+  },
+  "categories": [
+    {
+      "id": "quick-budget",
+      "key": "option1",
+      "iconSvg": "🍳",
+      "color": "red",
+      "title": {
+        "kh": "ប្រភេទ ម្ហូប ឆា",
+        "en": "Stirs fries"
+      },
+      "tagline": {
+        "kh": "ក្រោម ២ដុល្លារ ធ្វើក្រោម ១៥នាទី",
+        "en": "Under $2.00 & ready in under 15 mins"
+      },
+      "description": {
+        "kh": "មុខម្ហូបលឿនៗ គ្រឿងផ្សំទិញពីផ្សារតម្លៃសមរម្យ ស័ក្តិសមបំផុតសម្រាប់ថ្ងៃរវល់រៀន និងជិតដាច់ខែ!",
+        "en": "Fast-prep dishes with cheap Phsar market ingredients. Perfect for busy lecture days and end-of-month budgets!"
+      },
+      "badge": {
+        "kh": "ជម្រើសទី ១",
+        "en": "Option 1"
+      }
+    },
+    {
+      "id": "dorm-cooker",
+      "key": "option2",
+      "iconSvg": "pot",
+      "color": "yellow",
+      "title": {
+        "kh": "ម្ហូបឆ្នាំងដាំបាយ & ខ្ទះមួយ",
+        "en": "Dorm One-Pot & Rice Cooker"
+      },
+      "tagline": {
+        "kh": "គ្មានផ្ទះបាយធំ ក៏នៅតែធ្វើបាន",
+        "en": "No proper kitchen needed - 1 cooker does all"
+      },
+      "description": {
+        "kh": "ប្រើតែឆ្នាំងដាំបាយអគ្គិសនី ឬចង្រ្កានហ្គាសកូនកាត់មួយក្នុងបន្ទប់ជួល មិនបាច់លាងចានច្រើន!",
+        "en": "Cook using just your electric rice cooker or single dorm burner. Minimum cleanup, maximum satisfaction!"
+      },
+      "badge": {
+        "kh": "ជម្រើសទី ២",
+        "en": "Option 2"
+      }
+    },
+    {
+      "id": "moms-classics",
+      "key": "option3",
+      "iconSvg": "heart-pot",
+      "color": "green",
+      "title": {
+        "kh": "រសជាតិស្នាដៃម៉ាក់",
+        "en": "Mom's Comfort Classics"
+      },
+      "tagline": {
+        "kh": "នឹកផ្ទះ? រសជាតិម្ដាយធ្វើ កំណែសម្រួល",
+        "en": "Missing home? Simplified mother recipes"
+      },
+      "description": {
+        "kh": "សម្លម្ជូរ ឆាខ្ញី សម្លស្រាលៗដែលម៉ាក់ធ្លាប់ធ្វើឱ្យញ៉ាំ ឥឡូវសម្រួលវិធីធ្វើឱ្យសាមញ្ញ មិនបាច់បុកគ្រឿងហត់។",
+        "en": "Traditional home-cooked comfort stews and stir-fries simplified for students without requiring hours of pounding."
+      },
+      "badge": {
+        "kh": "ជម្រើសទី ៣",
+        "en": "Option 3"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "trei-chheur-chha-pongtea",
+      "categoryId": "quick-budget",
+      "featured": true,
+      "title": {
+        "kh": "ចៀនចួនត្រី",
+        "en": "Crispy Fried Fish with Ginger and Fermented Soybeans"
+      },
+      "shortDesc": {
+        "kh": "ម្ហូបសង្គ្រោះជីវិតនិស្សិតចុងខែ ហឹរតិចៗ ឈ្ងុយខ្ញី ប្រៃសៀងតិចៗ មានជាតិខ្លាញ់តិច ឆ្ងាញ់មិនធ្វើឲអ្នកឈឺពេលបរិភោគ",
+        "en": "End-of-Month Student Saver Meals — A little spicy, fragrant with ginger, lightly seasoned with soy sauce, low in fat, and delicious without upsetting your stomach."
+      },
+      "cost": {
+        "kh": "៨០០០",
+        "en": "៨០០០"
+      },
+      "cookTime": {
+        "kh": "១០ នាទី",
+        "en": "១០ នាទី"
+      },
+      "servings": {
+        "kh": "១ - ២ នាក់",
+        "en": "1-2 servings"
+      },
+      "difficulty": {
+        "kh": "ងាយស្រួលខ្លាំង",
+        "en": "Super Easy"
+      },
+      "equipment": {
+        "kh": "Small pan or pot",
+        "en": "Small pan or pot"
+      },
+      "studentTip": {
+        "kh": "",
+        "en": ""
+      },
+      "image": "/samples/pppp8855222__12_.jpg",
+      "gallery": [
+        "/samples/pppp8855222__12_.jpg"
+      ],
+      "tags": [
+        "Budget",
+        "Under $1.50",
+        "10 Mins",
+        "High Protein"
+      ],
+      "ingredients": [
+        {
+          "kh": "- ខ្ញី ហាន់ជាសរសៃ",
+          "en": "Ginger, julienned"
+        },
+        {
+          "kh": "- ត្រីសណ្ដាយ ឫត្រីប្រភេទផ្សេង",
+          "en": "Sanday fish or another type of fish"
+        },
+        {
+          "kh": "- សៀងផ្អែម",
+          "en": "Sweet fermented soybeans"
+        },
+        {
+          "kh": "- ក្រូចឆ្មារ",
+          "en": "Lime"
+        },
+        {
+          "kh": "- ស្លឹកខ្ទឹម",
+          "en": "Spring onions"
+        }
+      ],
+      "steps": [
+        {
+          "num": 1,
+          "kh": "1- ដាក់​ប្រេង​ឆានៅខ្ទះ ​អោយ​ក្ដៅ​បន្តិច​ ទើប​ដាក់​ត្រី​ចៀន ​អោយ​ក្រៀម​ស្រួយល្អ​(កុំ​ប្រែច្រើន​ដងពេក​ អាច​នាំអោយ​បែក​សាច់ត្រី)​។",
+          "en": "1. Heat a little cooking oil in a pan. Once the oil is slightly hot, add the fish and fry until crispy. Avoid turning it too many times, as the fish may break apart."
+        },
+        {
+          "num": 2,
+          "kh": "2- ពេល​ត្រីឆ្អិន​ក្រៀម ​លើក​ចេញសិន​ រួចដាក់​ខ្ញីឆា​ប្រើ​ភ្លើង​តិចៗ ​អោយខ្ញី​ក្រៀម។​",
+          "en": "2. Once the fish is cooked and crispy, remove it from the pan. Then add the ginger and stir-fry over low heat until it becomes crispy."
+        },
+        {
+          "num": 3,
+          "kh": "3- ឆ្លៀត​ពេល​កំពុង​ឆាខ្ញី​ យើង​មក​លាយគ្រឿង​សៀង​សិន៖​ សៀង​ផ្អែម ​ចាក់ដាក់​ចាន ​ហាន់​ស្លឹកខ្ទឹម​ដាក់​ រួចថែម​ទឹក​បន្តិច ​ក្រូច​ឆ្មារ​បន្តិច ​អោយ​មាន​រសជាតិ ​ប្រៃ​ផ្អែមជូរ។​",
+          "en": "3. While the ginger is cooking, prepare the sauce. Put the sweet fermented soybeans in a bowl, add the chopped spring onions, a little water, and a little lime juice. Adjust the seasoning to achieve a balanced salty, sweet, and sour taste."
+        },
+        {
+          "num": 4,
+          "kh": "4-  ដល់​ពេល​ខ្ញីឆ្អិន​ក្រៀម​ហើយ ​ចាក់ទឹក​សៀង​ចូល​ខ្ទះ​នោះ ​ទើប​ដាក់ត្រី​ចៀន​ចូល​ ប្រើ​ភ្លើង​តិចៗ​ ដើម្បី​អោយ​ត្រី​ចូល​ជាតិ​ ជាមួយ​និងសៀង ​ភ្លក្ស​មើល​ ថែម​ថយ​ជាការ​ស្រេច៕",
+          "en": "4. Once the ginger is crispy, pour the soy sauce mixture into the same pan. Add the fried fish and cook over low heat, allowing the fish to absorb the flavors of the sauce. Taste and adjust the seasoning as needed. Serve and enjoy!"
+        }
+      ]
+    },
+    {
+      "id": "pongtea-chien-trokoun",
+      "categoryId": "quick-budget",
+      "featured": false,
+      "title": {
+        "kh": "ឆាគ្រឿងសាច់មាន់",
+        "en": "Stir-Fried Chicken"
+      },
+      "shortDesc": {
+        "kh": "",
+        "en": ""
+      },
+      "cost": {
+        "kh": "~៨០០០ រៀល",
+        "en": "~៨០០០ រៀល"
+      },
+      "cookTime": {
+        "kh": "៨ នាទី",
+        "en": "៨ នាទី"
+      },
+      "servings": {
+        "kh": "១ - ២ នាក់",
+        "en": "1-2 servings"
+      },
+      "difficulty": {
+        "kh": "ងាយស្រួលខ្លាំង",
+        "en": "Super Easy"
+      },
+      "equipment": {
+        "kh": "Frying skillet",
+        "en": "Frying skillet"
+      },
+      "studentTip": {
+        "kh": "",
+        "en": ""
+      },
+      "image": "/samples/images.jpeg",
+      "gallery": [
+        "/samples/images.jpeg"
+      ],
+      "tags": [
+        "Budget",
+        "Under $1.00",
+        "Vegetarian-Friendly",
+        "Under 10 Mins"
+      ],
+      "ingredients": [
+        {
+          "kh": "សាច់មាន់ ២០០ក្រាម",
+          "en": "- 200 g chicken"
+        },
+        {
+          "kh": "ទឹកត្រី ១ស្លាបព្រាបាយ",
+          "en": "- 1 tablespoon fish sauce"
+        },
+        {
+          "kh": "ស្ករ ១ស្លាបព្រាកាហ្វេ",
+          "en": "- 1 teaspoon sugar"
+        },
+        {
+          "kh": "ទឹក កន្លះកូនចានចង្កឹះ",
+          "en": "- ½ small dipping bowl of water"
+        },
+        {
+          "kh": "ស្លឹកម្រះព្រៅតាមចំណង់",
+          "en": "- Thai basil leaves, to taste"
+        },
+        {
+          "kh": "ស្លឹកក្រូចសើច ២-៣សន្លឹក",
+          "en": "- 2–3 kaffir lime leaves"
+        },
+        {
+          "kh": "គ្រឿងបុក ១ កូនចានចង្កឹះ",
+          "en": "- 1 small dipping bowl of pounded Cambodian spice paste (kroeung)"
+        }
+      ],
+      "steps": [
+        {
+          "num": 1,
+          "kh": "១. ដាំខ្ទះដាក់ប្រេងឆាចូល ដាក់គ្រឿងបុក ចូលរំលីងចូលគ្នាមួយសន្ទុះ រួចដាក់សាច់មាន់ចូល ឆាច្របល់ចូលគ្នាឲ្យសព្វជាមួយគ្រឿងឲ្យសាច់ឆ្អិនបន្តិច។",
+          "en": "1. Heat a little cooking oil in a frying pan. Add the pounded Cambodian spice paste (kroeung) and stir-fry briefly until fragrant. Add the chicken and stir well to coat it evenly with the spice paste. Cook until the chicken is partially cooked."
+        },
+        {
+          "num": 2,
+          "kh": "២. ដាក់ទឹកចូលឆាចូលគ្នាទុកមួយរំពុះ ហើយដាក់ទឹកត្រី និងស្ករចូល ឆាចូលគ្នាឲ្យសព្វ។",
+          "en": "2. Add the water and bring it to a boil. Add the fish sauce and sugar, then stir well to combine all the ingredients."
+        },
+        {
+          "num": 3,
+          "kh": "៣.រួចហើយដាក់ស្លឹកម្រះព្រៅ, ស្លឹកក្រូចសើចចូលឆា ៤-៥ត្រលប់ទៀត ឆ្អិនជាការស្រេច",
+          "en": "3. Add the Thai basil leaves and kaffir lime leaves. Stir-fry for another 4–5 turns, until the chicken is fully cooked. Serve hot and enjoy!"
+        }
+      ]
+    },
+    {
+      "id": "chha-trasork-sach-chrouk",
+      "categoryId": "quick-budget",
+      "featured": false,
+      "title": {
+        "kh": "ឆាខាត់ណាសាច់គោទឹកភ្នែក",
+        "en": "Stir-Fried Chinese Kale with Beef in a Savory Sauce"
+      },
+      "shortDesc": {
+        "kh": "",
+        "en": ""
+      },
+      "cost": {
+        "kh": "~$2 (8000រៀល)",
+        "en": "~$2 (8000រៀល)"
+      },
+      "cookTime": {
+        "kh": "8 នាទី",
+        "en": "8 នាទី"
+      },
+      "servings": {
+        "kh": "២ នាក់",
+        "en": "2 servings"
+      },
+      "difficulty": {
+        "kh": "ងាយស្រួល",
+        "en": "Easy"
+      },
+      "equipment": {
+        "kh": "Skillet",
+        "en": "Skillet"
+      },
+      "studentTip": {
+        "kh": "ឆាភ្លើងខ្លាំងរហ័សដៃ កុំឆាយូរពេក ទុកខាត់ណាឱ្យស្រួយទើបឆ្ងាញ់!",
+        "en": "Stir-fry over high heat, working quickly. Don’t cook it for too long—keep the Chinese kale crisp for the best taste!"
+      },
+      "image": "/samples/148.png",
+      "gallery": [
+        "/samples/148.png"
+      ],
+      "tags": [
+        "Budget",
+        "High Hydration",
+        "Quick Prep"
+      ],
+      "ingredients": [
+        {
+          "kh": "1-សាច់គោចំឡកក្នុង(សាច់ផុយ)500g",
+          "en": "1. 500 g beef (inside round, a tender cut)"
+        },
+        {
+          "kh": "2-ដើមខាត់ណាថ្លោសៗ500g",
+          "en": "2. 500 g thick-stemmed Chinese kale"
+        },
+        {
+          "kh": "3-ប្រេងឆា30ml",
+          "en": "3. 30 ml cooking oil"
+        },
+        {
+          "kh": "4- ខ្ទឹមសចិញ្ច្រាំ1ស្លាបព្រាកាហ្វេ",
+          "en": "4. 1 teaspoon minced garlic"
+        },
+        {
+          "kh": "5-ម្ទេសឆ្អើរវះយកគ្រាប់ចេញត្រាំទឹកក្តៅឲ្យទន់ ពូតទឹកចេញ ចិញ្ច្រាំឲ្យម៉ត់50g 6-ទឹកប្រេងខ្យង1ស្លាបព្រាកាហ្វេ",
+          "en": "5. 50 g dried chilies, deseeded, soaked in hot water until soft, squeezed dry, and finely minced"
+        },
+        {
+          "kh": "6. 1 teaspoon oyster sauce",
+          "en": "6. 1 teaspoon oyster sauce"
+        }
+      ],
+      "steps": [
+        {
+          "num": 1,
+          "kh": "1- បកសម្បកដើមខាត់ណាចេញ រួចកាត់ជាចំណិតៗប្រវែង1ថ្នាំងដៃ។",
+          "en": "1\\. Peel the thick stems of the Chinese kale and cut them into pieces about one finger-joint long."
+        },
+        {
+          "num": 2,
+          "kh": "2- ដាំទឹកដាក់អំបិល1ចឹបប្រេងឆាបន្ដិច ពេលទឹកពុះដាក់ដើមខាត់ណាចូលស្រុស10វិនាទីរួចស្រង់ដើមខាត់ណាចេញយកមកត្រាំក្នុងកាធុនទឹកត្រជាក់លាយទឹកកក ទុកមួយសន្ទុះស្រង់ចេញ ពូតទឹកចេញឲ្យអស់ រួចយកវាតម្រៀបលើចានពងក្រពើ។",
+          "en": "2\\. Bring a pot of water to a boil. Add a pinch of salt and a little cooking oil. Blanch the Chinese kale stems for 10 seconds, then remove them and immediately transfer them to a bowl of ice water. Let them cool briefly, then drain and squeeze out any excess water. Arrange the stems neatly on an oval serving plate."
+        },
+        {
+          "num": 3,
+          "kh": "3- យកសាច់គោហាន់ជាបន្ទះតូចៗស្តើងល្មម ទុកមួយឡែកសិន។",
+          "en": "3\\. Slice the beef into thin, bite-sized pieces and set aside."
+        },
+        {
+          "num": 4,
+          "kh": "4- ដាំខ្ទះឲ្យក្តៅដាក់ប្រេងឆា ខ្ទឹមសចិញ្ច្រាំ ម្ទេសឆ្អើរចិញ្ច្រាំ ប្រេងខ្យង  ឆាឲ្យវាឈ្ងុយចូលគ្នា បិទភ្លើងភ្លាមចាក់សាច់គោចូល រួចក្រឡុកវាឲ្យចូលជាប់ជាតិឈ្ងុយ រួចយកវាទៅចាក់ពីលើចានខាត់ណា (ធ្វើឲ្យរហ័សដើម្បីកុំឲ្យសាច់គោឆ្អិនពេក ម្ហូបនេះសាច់គោនៅជាប់ឈាមតិចៗទើបពិសេស)",
+          "en": "4\\. Heat a frying pan over high heat. Add the cooking oil, minced garlic, minced dried chilies, oyster sauce, and sesame oil. Stir-fry briefly until fragrant, then immediately turn off the heat. Add the beef and toss quickly to coat it in the fragrant mixture. Pour the beef over the Chinese kale on the serving plate. Work quickly to avoid overcooking the beef; for this dish, the beef is traditionally served very rare, with a little redness remaining inside, for its distinctive flavor."
+        },
+        {
+          "num": 5,
+          "kh": "5- យកទឹកត្រីកោះកុងស្រោចពីលើ",
+          "en": "5\\. Drizzle Koh Kong fish sauce over the top."
+        },
+        {
+          "num": 6,
+          "kh": "6- លំអពីលើចានដោយចំណិតខ្ទឹមក្រហម និងដើមខ្ទឹមកាត់ជាម៉ូតផ្កា។ ម្ហូបនេះត្រូវតែទទួលទានក្តៅៗទាំងហិលទាំងក្តៅផងធ្វើឲ្យស្រក់ទឹកភ្នែកតក់ៗ ទើបហៅឆាខាត់ណាទឹកភ្នែក",
+          "en": "6\\. Garnish with sliced shallots and spring onions cut into flower shapes."
+        },
+        {
+          "num": 7,
+          "kh": "Serving tip: Serve immediately while hot. The combination of heat and spiciness should bring tears to your eyes—hence the name Stir-Fried Chinese Kale with Beef in Tears!",
+          "en": "Serving tip: Serve immediately while hot. The combination of heat and spiciness should bring tears to your eyes—hence the name Stir-Fried Chinese Kale with Beef in Tears!"
+        },
+        {
+          "num": 8,
+          "kh": "Food safety note: Beef that is very rare or still raw inside can carry harmful bacteria. For safer eating, cook the beef thoroughly, especially for children, pregnant people, older adults, and anyone with a weakened immune system.",
+          "en": "Food safety note: Beef that is very rare or still raw inside can carry harmful bacteria. For safer eating, cook the beef thoroughly, especially for children, pregnant people, older adults, and anyone with a weakened immune system."
+        }
+      ]
+    },
+    {
+      "id": "khor-sach-chrouk-pongtea",
+      "categoryId": "dorm-cooker",
+      "featured": true,
+      "title": {
+        "kh": "ខសាច់ជ្រូកពងទា កម្រិតនិស្សិត",
+        "en": "Student Dorm Braised Pork with Eggs"
+      },
+      "shortDesc": {
+        "kh": "ខសាច់ជ្រូកពណ៌ឡើងក្រហមស្អាត ប្រើតែឆ្នាំងដាំបាយ ឬឆ្នាំងតូចមួយ ក្លិនឈ្ងុយពេញបន្ទប់",
+        "en": "Sweet, savory caramelized braised pork belly and hard-boiled eggs made completely in a rice cooker"
+      },
+      "cost": {
+        "kh": "~$2.25 (៩,០០០ រៀល)",
+        "en": "~$2.25 (9,000 Riels)"
+      },
+      "cookTime": {
+        "kh": "២៥ នាទី",
+        "en": "25 mins"
+      },
+      "servings": {
+        "kh": "២ - ៣ ពេល",
+        "en": "2-3 meals"
+      },
+      "difficulty": {
+        "kh": "មធ្យម",
+        "en": "Moderate"
+      },
+      "equipment": {
+        "kh": "ឆ្នាំងដាំបាយអគ្គិសនី ឬឆ្នាំងស៊ុប",
+        "en": "Rice Cooker or Small Pot"
+      },
+      "studentTip": {
+        "kh": "ធ្វើម្ដងអាចទុកញ៉ាំបាន ២ ទៅ ៣ ពេលក្នុងទូទឹកកក! ចុចប៊ូតុង Cook ក្នុងឆ្នាំងបាយដើម្បីរម្ងាស់ឱ្យសាច់ផុយដោយស្វ័យប្រវត្តិ។",
+        "en": "Cook once, eat for 3 meals! The rice cooker gently simmers the pork belly until melt-in-your-mouth tender."
+      },
+      "image": "/samples/khor_sach_chrouk.jpg",
+      "gallery": [
+        "/samples/khor_sach_chrouk.jpg",
+        "/samples/recipe_quick_bites.jpg"
+      ],
+      "tags": [
+        "Dorm Hack",
+        "Meal Prep",
+        "Rice Cooker",
+        "Protein Rich"
+      ],
+      "ingredients": [
+        {
+          "kh": "សាច់ជ្រូកបីជាន់ ២០០ ក្រាម (កាត់ដុំៗ)",
+          "en": "200g pork belly or shoulder, cubed"
+        },
+        {
+          "kh": "ពងទាស្ងោរ ២-៣ គ្រាប់ (បកសំបក)",
+          "en": "2-3 hard-boiled eggs, peeled"
+        },
+        {
+          "kh": "ស្ករត្នោត ឬស្ករស ២ ស្លាបព្រាបាយ (សម្រាប់រម្ងាស់ពណ៌)",
+          "en": "2 tbsp palm sugar (or brown sugar) for caramel"
+        },
+        {
+          "kh": "ខ្ទឹមស ៤ កំពឹស & ម្រេចគ្រាប់បុកបន្តិច",
+          "en": "4 cloves garlic & crushed black peppercorns"
+        },
+        {
+          "kh": "ទឹកត្រី ២ ស្លាបព្រាបាយ & ទឹកដូង ឬទឹកស្អាត",
+          "en": "2 tbsp fish sauce & fresh coconut water (or water)"
+        }
+      ],
+      "steps": [
+        {
+          "num": 1,
+          "kh": "បើកឆ្នាំងដាំបាយ ដាក់ស្ករ និងទឹកបន្តិច កូររហូតស្ករឡើងពណ៍ក្រហមក្រម៉ៅ (Caramel)។",
+          "en": "In your cooker, melt sugar with a splash of water until it bubbles into a dark amber caramel."
+        },
+        {
+          "num": 2,
+          "kh": "ដាក់ខ្ទឹមស និងសាច់ជ្រូកចូល ច្របល់ឱ្យស្ករបិទជាប់សាច់ឡើងពណ៌ក្រហមស្អាត។",
+          "en": "Toss in garlic and pork cubes; stir until pieces are thoroughly coated in glossy caramel."
+        },
+        {
+          "num": 3,
+          "kh": "ចាក់ទឹកត្រី ម្រេច និងទឹកដូងចូលឱ្យលិចសាច់ រួចដាក់ពងទាស្ងោរចូល។",
+          "en": "Add fish sauce, crushed pepper, and pour water/coconut water to cover. Add boiled eggs."
+        },
+        {
+          "num": 4,
+          "kh": "បិទគម្របឆ្នាំងដាំបាយ រម្ងាស់ ២០ នាទីរហូតសាច់ជ្រូកផុយ និងទឹកខខាប់ឈ្ងុយ។",
+          "en": "Close cooker lid, let simmer for 20 minutes until pork is tender and sauce is rich."
+        }
+      ]
+    },
+    {
+      "id": "babor-sor-trei-ngiat",
+      "categoryId": "dorm-cooker",
+      "featured": false,
+      "title": {
+        "kh": "បបររសជាតិស្រាល ញ៉ាំជាមួយត្រីងៀត",
+        "en": "Rice Cooker Plain Congee with Salted Fish"
+      },
+      "shortDesc": {
+        "kh": "ស័ក្តិសមបំផុតពេលឈឺក្បាល អស់កម្លាំង ឬសល់បាយកក ឆ្នាំងដាំបាយធ្វើបានយ៉ាងងាយ",
+        "en": "Comforting, silky rice porridge cooked in 20 minutes, served with crispy salted dried fish and scallions"
+      },
+      "cost": {
+        "kh": "~$1.40 (៥,៦០០ រៀល)",
+        "en": "~$1.40 (5,600 Riels)"
+      },
+      "cookTime": {
+        "kh": "២០ នាទី",
+        "en": "20 mins"
+      },
+      "servings": {
+        "kh": "២ នាក់",
+        "en": "2 servings"
+      },
+      "difficulty": {
+        "kh": "ងាយស្រួលខ្លាំង",
+        "en": "Super Easy"
+      },
+      "equipment": {
+        "kh": "ឆ្នាំងដាំបាយ",
+        "en": "Rice Cooker"
+      },
+      "studentTip": {
+        "kh": "ដាក់ទឹកសមាមាត្រ ៥ ដងនៃអង្ករ។ បង់ខ្ញីហាន់សរសៃៗចូលក្នុងបបរធ្វើឱ្យក្រពះស្រួល មិនហើមពោះ។",
+        "en": "Use 1:5 rice to water ratio. Slivers of ginger in the porridge soothe your stomach during exam stress."
+      },
+      "image": "/samples/rice_cooker_congee.jpg",
+      "gallery": [
+        "/samples/rice_cooker_congee.jpg"
+      ],
+      "tags": [
+        "Dorm Hack",
+        "Comfort Food",
+        "Exam Week Recovery"
+      ],
+      "ingredients": [
+        {
+          "kh": "អង្ករផ្កាម្លិះ កន្លះកំប៉ុង (លាងស្អាត)",
+          "en": "1/2 cup Jasmine rice, rinsed"
+        },
+        {
+          "kh": "ទឹកស្អាត ឬទឹកស៊ុប ៣ កែវ",
+          "en": "3 cups water or light broth"
+        },
+        {
+          "kh": "ខ្ញីស្រស់ ១ មើមតូច (ហាន់សរសៃៗ)",
+          "en": "1 small knob ginger, julienned"
+        },
+        {
+          "kh": "ត្រីងៀត ឬពងទាចៀន ១ ចំណិត",
+          "en": "Crispy dried salted fish or fried egg"
+        },
+        {
+          "kh": "ខ្ទឹមបំពង & ស្លឹកខ្ទឹមហាន់ល្អិត",
+          "en": "Crispy fried garlic & scallions for garnish"
+        }
+      ],
+      "steps": [
+        {
+          "num": 1,
+          "kh": "ដាក់អង្ករ ទឹក និងខ្ញីសរសៃចូលក្នុងឆ្នាំងដាំបាយ ចុចប៊ូតុង Cook ឬ Porridge។",
+          "en": "Put washed rice, water, and ginger strips into rice cooker. Hit the Cook/Porridge switch."
+        },
+        {
+          "num": 2,
+          "kh": "ទុកឱ្យពុះ កូរម្ដងម្កាលដើម្បីកុំឱ្យអង្ករជាប់បាតឆ្នាំង។",
+          "en": "Allow to boil, stirring occasionally to keep rice grains from sticking."
+        },
+        {
+          "num": 3,
+          "kh": "ចៀនត្រីងៀត ឬពងទាឱ្យស្រួយដើម្បីញ៉ាំផ្ទាប់។",
+          "en": "Pan-fry your dried fish or a quick egg until crispy."
+        },
+        {
+          "num": 4,
+          "kh": "ដួសបបរក្តៅៗដាក់ចាន រោយខ្ទឹមបំពង និងស្លឹកខ្ទឹម។ ញ៉ាំពេលក្តៅឧណ្ហៗ!",
+          "en": "Ladle silky porridge into bowl, top with golden garlic and greens. Enjoy hot!"
+        }
+      ]
+    },
+    {
+      "id": "soup-sluk-bas",
+      "categoryId": "dorm-cooker",
+      "featured": false,
+      "title": {
+        "kh": "ស៊ុបស្លឹកបាសសាច់ជ្រូកចិញ្ច្រាំ",
+        "en": "Ivy Gourd Leaf Soup with Minced Pork"
+      },
+      "shortDesc": {
+        "kh": "សម្លស្រាលស្រួលលេប ស្លឹកបាសឆ្អិនលឿនត្រឹម ៦០វិនាទី បំប៉នសុខភាព",
+        "en": "Light nourishing broth with vitamin-packed tender ivy gourd greens and sweet pork meatballs"
+      },
+      "cost": {
+        "kh": "~$1.20 (៤,៨០០ រៀល)",
+        "en": "~$1.20 (4,800 Riels)"
+      },
+      "cookTime": {
+        "kh": "១០ នាទី",
+        "en": "10 mins"
+      },
+      "servings": {
+        "kh": "២ នាក់",
+        "en": "2 servings"
+      },
+      "difficulty": {
+        "kh": "ងាយស្រួលខ្លាំង",
+        "en": "Super Easy"
+      },
+      "equipment": {
+        "kh": "ឆ្នាំងតូច ឬឆ្នាំងដាំបាយ",
+        "en": "Small Pot or Cooker"
+      },
+      "studentTip": {
+        "kh": "កុំដាំស្លឹកបាសយូរពេក នាំឱ្យខ្មៅស្លោក។ ពេលទឹកពុះ បង់ស្លឹកបាសចូលភ្លាម បិទភ្លើងភ្លែត នោះស្លឹកនឹងបៃតងស្រស់។",
+        "en": "Do not boil ivy gourd leaves for long. Drop them into boiling soup and immediately shut off heat to preserve emerald color."
+      },
+      "image": "/samples/ivy_gourd_soup.jpg",
+      "gallery": [
+        "/samples/ivy_gourd_soup.jpg"
+      ],
+      "tags": [
+        "Dorm Hack",
+        "Healthy",
+        "10 Mins",
+        "Vegetable Soup"
+      ],
+      "ingredients": [
+        {
+          "kh": "ស្លឹកបាសស្រស់ ១ ចានចង្កោម (លាងស្អាត)",
+          "en": "1 bowl fresh ivy gourd leaves (cleaned)"
+        },
+        {
+          "kh": "សាច់ជ្រូកចិញ្ច្រាំ ១០០ ក្រាម",
+          "en": "100g minced pork"
+        },
+        {
+          "kh": "ទឹកត្រី ១ ស្លាបព្រាបាយ & ម្សៅស៊ុប ១ ស្លាបព្រាកាហ្វេ",
+          "en": "1 tbsp fish sauce & 1 tsp bouillon"
+        },
+        {
+          "kh": "ម្រេចម៉ត់ & ខ្ទឹមសបំពង",
+          "en": "Ground pepper & crispy fried garlic"
+        },
+        {
+          "kh": "ទឹកស្អាត ២ កែវ",
+          "en": "2 cups water"
+        }
+      ],
+      "steps": [
+        {
+          "num": 1,
+          "kh": "ដាំទឹក ២ កែវឱ្យពុះក្នុងឆ្នាំង។",
+          "en": "Bring 2 cups of water to an energetic boil in your pot."
+        },
+        {
+          "num": 2,
+          "kh": "លាយសាច់ជ្រូកជាមួយម្រេច និងទឹកត្រីបន្តិច រួចដួសជាដុំៗទម្លាក់ចូលទឹកពុះ។",
+          "en": "Season minced pork with pepper, pinch into small meatballs and drop into boiling water."
+        },
+        {
+          "num": 3,
+          "kh": "ដួសពពុះចេញ ភ្លក់រសជាតិដោយបន្ថែមទឹកត្រី និងម្សៅស៊ុបតាមចំណូលចិត្ត។",
+          "en": "Skim surface foam, add fish sauce and soup seasoning."
+        },
+        {
+          "num": 4,
+          "kh": "បង់ស្លឹកបាសចូល រួចបិទភ្លើងភ្លាម។ រោយម្រេច និងខ្ទឹមបំពងជាការស្រេច។",
+          "en": "Drop in ivy gourd greens, turn off heat immediately. Top with fried garlic."
+        }
+      ]
+    },
+    {
+      "id": "chha-khnhei-sach-moan",
+      "categoryId": "moms-classics",
+      "featured": true,
+      "title": {
+        "kh": "ឆាខ្ញីសាច់មាន់ រសជាតិម៉ាក់",
+        "en": "Mom's Fragrant Ginger Chicken Stir-Fry"
+      },
+      "shortDesc": {
+        "kh": "ក្លិនឈ្ងុយខ្ញីឆាជាមួយសណ្តែកសៀងជូរផ្អែម សាច់មាន់ទន់ឆ្ងាញ់ បង្កើនកម្តៅក្នុងខ្លួន",
+        "en": "Beloved Cambodian home classic: julienned ginger, tender chicken and savory fermented bean paste"
+      },
+      "cost": {
+        "kh": "~$1.80 (៧,២០០ រៀល)",
+        "en": "~$1.80 (7,200 Riels)"
+      },
+      "cookTime": {
+        "kh": "១៥ នាទី",
+        "en": "15 mins"
+      },
+      "servings": {
+        "kh": "២ នាក់",
+        "en": "2 servings"
+      },
+      "difficulty": {
+        "kh": "ងាយស្រួល",
+        "en": "Easy"
+      },
+      "equipment": {
+        "kh": "ខ្ទះឆា",
+        "en": "Frying Pan"
+      },
+      "studentTip": {
+        "kh": "ទិញខ្ញីដែលគេចិតសរសៃស្រាប់នៅផ្សារចំណេញពេលច្រើន! សណ្តែកសៀងគ្រាប់ (សៀងផ្អែម) គឺជាអាថ៌កំបាំងរសជាតិស្នាដៃម៉ាក់។",
+        "en": "Buy pre-julienned ginger from market sellers to save 15 minutes of knife work. Yellow fermented beans are the secret mom flavor!"
+      },
+      "image": "/samples/ginger_chicken.jpg",
+      "gallery": [
+        "/samples/ginger_chicken.jpg",
+        "/samples/mother_cooking.png"
+      ],
+      "tags": [
+        "Mom's Favorite",
+        "Aromatic",
+        "Immunity Boost",
+        "High Protein"
+      ],
+      "ingredients": [
+        {
+          "kh": "សាច់មាន់ ២០០ ក្រាម (ហាន់ចំណិតស្ដើងៗ)",
+          "en": "200g chicken fillet, sliced"
+        },
+        {
+          "kh": "ខ្ញីស្រស់ហាន់សរសៃ ១ កែវចង្កោម",
+          "en": "1 cup julienned fresh ginger"
+        },
+        {
+          "kh": "សៀងផ្អែម (Fermented bean paste) ១ ស្លាបព្រាបាយ",
+          "en": "1 tbsp sweet fermented yellow soybean paste"
+        },
+        {
+          "kh": "ខ្ទឹមស ៣ កំពឹស (ដំឱ្យបែក)",
+          "en": "3 cloves garlic, smashed"
+        },
+        {
+          "kh": "ស្ករត្នោត ១ ស្លាបព្រាកាហ្វេ & ទឹកត្រី",
+          "en": "1 tsp palm sugar & splash of fish sauce"
+        },
+        {
+          "kh": "ស្លឹកខ្ទឹមហាន់កំណាត់ៗ",
+          "en": "Scallions cut into batons"
+        }
+      ],
+      "steps": [
+        {
+          "num": 1,
+          "kh": "បំពងខ្ទឹមសក្នុងប្រេងឆាឱ្យឈ្ងុយ រួចដាក់សាច់មាន់ចូលឆាឱ្យឡើងពណ៌ស។",
+          "en": "Brown garlic in hot oil, add chicken pieces and sear until meat turns white."
+        },
+        {
+          "num": 2,
+          "kh": "ដាក់សៀងផ្អែម និងស្ករត្នោតចូល កូរច្របល់ឱ្យក្លិនសៀងឡើងឈ្ងុយសព្វសាច់។",
+          "en": "Stir in yellow soybean paste and palm sugar until caramelized and fragrant."
+        },
+        {
+          "num": 3,
+          "kh": "ចាក់ខ្ញីហាន់សរសៃទាំងអស់ចូល ឆាត្រឡប់លើភ្លើងខ្លាំងប្រមាណ ៣ នាទី។",
+          "en": "Toss in all shredded ginger; stir-fry vigorously on high heat for 3 minutes."
+        },
+        {
+          "num": 4,
+          "kh": "ដាក់ស្លឹកខ្ទឹមចូល ភ្លក់ថែមទឹកត្រីបន្តិចរួចដួសដាក់ចាន។ ញ៉ាំជាមួយបាយក្តៅៗអស់ពីឆ្នាំង!",
+          "en": "Finish with scallions and a splash of fish sauce. Plate and serve hot!"
+        }
+      ]
+    },
+    {
+      "id": "samlor-machu-kroeung",
+      "categoryId": "moms-classics",
+      "featured": false,
+      "title": {
+        "kh": "សម្លម្ជូរគ្រឿង សាមញ្ញមិនបាច់បុក",
+        "en": "Easy Lemongrass Sour Soup (Machu Kroeung)"
+      },
+      "shortDesc": {
+        "kh": "ក្លិនស្លឹកគ្រៃ រមៀត ម្ជូរអំពិលទុំ និងត្រកួន រសជាតិប្រចាំត្រកូលរបស់ផ្ទះខ្មែរគ្រប់រូប",
+        "en": "Iconic Khmer sour soup with fragrant lemongrass kroeung, tangy tamarind, and tender greens"
+      },
+      "cost": {
+        "kh": "~$2.50 (១០,០០០ រៀល)",
+        "en": "~$2.50 (10,000 Riels)"
+      },
+      "cookTime": {
+        "kh": "២០ នាទី",
+        "en": "20 mins"
+      },
+      "servings": {
+        "kh": "២ - ៣ នាក់",
+        "en": "2-3 servings"
+      },
+      "difficulty": {
+        "kh": "មធ្យម",
+        "en": "Moderate"
+      },
+      "equipment": {
+        "kh": "ឆ្នាំងស៊ុប ឬឆ្នាំងដាំបាយ",
+        "en": "Soup Pot"
+      },
+      "studentTip": {
+        "kh": "ប្រាប់អ្នកផ្សារថា «ទិញគ្រឿងបុក ១,០០០ រៀល»។ មិនបាច់មានត្បាល់បុកគ្រឿងហត់ក្នុងបន្ទប់ជួលទេ!",
+        "en": "Ask Phsar vendors for 'Kroeung 1,000 Riels'. Pre-pounded lemongrass paste saves having to own a heavy stone mortar."
+      },
+      "image": "/samples/khmer_sour_soup.jpg",
+      "gallery": [
+        "/samples/khmer_sour_soup.jpg",
+        "/samples/mother_cooking.png"
+      ],
+      "tags": [
+        "Mom's Favorite",
+        "Sour & Tangy",
+        "Classic Khmer",
+        "Aromatic"
+      ],
+      "ingredients": [
+        {
+          "kh": "គ្រឿងបុកលឿង (Kroeung paste) ២ ស្លាបព្រាបាយ",
+          "en": "2 tbsp yellow lemongrass kroeung paste"
+        },
+        {
+          "kh": "សាច់គោ ឬឆ្អឹងជំនីរជ្រូក ១៥០ ក្រាម",
+          "en": "150g beef slices or pork ribs"
+        },
+        {
+          "kh": "ត្រកួន ឬត្រប់វែង ១ ចាន",
+          "en": "1 bowl water spinach stems or eggplant"
+        },
+        {
+          "kh": "ទឹកអំពិលទុំ ២ ស្លាបព្រាបាយ",
+          "en": "2 tbsp tamarind juice/powder"
+        },
+        {
+          "kh": "ប្រហុកកន្លះស្លាបព្រាកាហ្វេ (លាយទឹកក្តៅ)",
+          "en": "1/2 tsp fermented fish paste (prohok), dissolved"
+        },
+        {
+          "kh": "ស្ករត្នោត ទឹកត្រី និងស្លឹកម្រះព្រៅ",
+          "en": "Palm sugar, fish sauce, and holy basil"
+        }
+      ],
+      "steps": [
+        {
+          "num": 1,
+          "kh": "ចាក់ប្រេងបន្តិច លីងគ្រឿងបុក និងទឹកប្រហុកឱ្យឈ្ងុយសាយភាយពេញផ្ទះ។",
+          "en": "Heat a drop of oil, gently fry the kroeung paste and dissolved prohok until aromatic."
+        },
+        {
+          "num": 2,
+          "kh": "ដាក់សាច់ចូលឆាជាមួយគ្រឿងឱ្យចូលជាតិល្អ រួចចាក់ទឹកដាំឱ្យពុះខ្លាំង។",
+          "en": "Add meat slices, sear to lock in flavor, then pour water and bring to a rolling boil."
+        },
+        {
+          "num": 3,
+          "kh": "ថែមទឹកអំពិលទុំ ស្ករត្នោត និងទឹកត្រី ភ្លក់ឱ្យមានជាតិជូរប្រៃផ្អែមដិតល្មម។",
+          "en": "Season with tamarind juice, palm sugar and fish sauce for a vibrant sour-savory balance."
+        },
+        {
+          "num": 4,
+          "kh": "បង់ត្រកួន និងស្លឹកម្រះព្រៅចូល រួចពន្លត់ភ្លើងភ្លាម។ ដួសញ៉ាំជាមួយបាយក្តៅៗ!",
+          "en": "Add water spinach and holy basil; remove from heat immediately and serve."
+        }
+      ]
+    },
+    {
+      "id": "chha-spey-kmao-garlic",
+      "categoryId": "moms-classics",
+      "featured": false,
+      "title": {
+        "kh": "ឆាស្ពៃខ្មៅខ្ទឹមស សាច់ជ្រូក",
+        "en": "Garlic Bok Choy Stir-Fry with Pork"
+      },
+      "shortDesc": {
+        "kh": "ស្ពៃស្រួយផ្អែមឆ្ងាញ់ ខ្ទឹមសបំពងឈ្ងុយ ធ្វើលឿនក្នុង ៨នាទី",
+        "en": "Vibrant crisp Bok Choy stir-fried with fragrant golden garlic and savory oyster sauce"
+      },
+      "cost": {
+        "kh": "~$1.30 (៥,២០០ រៀល)",
+        "en": "~$1.30 (5,200 Riels)"
+      },
+      "cookTime": {
+        "kh": "៨ នាទី",
+        "en": "8 mins"
+      },
+      "servings": {
+        "kh": "២ នាក់",
+        "en": "2 servings"
+      },
+      "difficulty": {
+        "kh": "ងាយស្រួលខ្លាំង",
+        "en": "Super Easy"
+      },
+      "equipment": {
+        "kh": "ខ្ទះឆា",
+        "en": "Skillet"
+      },
+      "studentTip": {
+        "kh": "ញែកទងស្ពៃរឹងៗដាក់ឆាមុន ១ នាទី ចាំដាក់ស្លឹកស្ពៃតាមក្រោយ នោះស្លឹកនឹងមិនរលួយ ហើយទងនៅតែស្រួយល្អ។",
+        "en": "Stir-fry the crunchy white stems first for 1 minute before tossing in the delicate green leaves."
+      },
+      "image": "/samples/garlic_greens.jpg",
+      "gallery": [
+        "/samples/garlic_greens.jpg"
+      ],
+      "tags": [
+        "Mom's Favorite",
+        "Under 10 Mins",
+        "Vitamins",
+        "Crunchy Greens"
+      ],
+      "ingredients": [
+        {
+          "kh": "ស្ពៃខ្មៅ ឬស្ពៃបូកគោ ១ បាច់ (លាងកាត់កំណាត់)",
+          "en": "1 bunch Bok Choy, washed and cut"
+        },
+        {
+          "kh": "សាច់ជ្រូកហាន់ស្ដើងៗ ៥០ ក្រាម",
+          "en": "50g thinly sliced pork (optional)"
+        },
+        {
+          "kh": "ខ្ទឹមស ៥ កំពឹស (ដំឱ្យបែក)",
+          "en": "5 cloves garlic, coarsely crushed"
+        },
+        {
+          "kh": "ប្រេងខ្យង ១ ស្លាបព្រាបាយ & ស្ករសបន្តិច",
+          "en": "1 tbsp oyster sauce & pinch of sugar"
+        },
+        {
+          "kh": "ប្រេងឆា ១ ស្លាបព្រាបាយ",
+          "en": "1 tbsp cooking oil"
+        }
+      ],
+      "steps": [
+        {
+          "num": 1,
+          "kh": "បំពងខ្ទឹមសជាមួយប្រេងឆាឱ្យឡើងពណ៌លឿងស្រាល។",
+          "en": "Saute crushed garlic in oil until lightly golden."
+        },
+        {
+          "num": 2,
+          "kh": "ដាក់សាច់ជ្រូកឆា ២ នាទីឱ្យឆ្អិន។",
+          "en": "Add sliced pork and stir-fry for 2 minutes."
+        },
+        {
+          "num": 3,
+          "kh": "ដាក់ទងស្ពៃចូលឆាមុន រួចដាក់ស្លឹកស្ពៃ និងប្រេងខ្យងចូលតាមក្រោយ។",
+          "en": "Add crunchy stems first, followed by leafy greens and oyster sauce."
+        },
+        {
+          "num": 4,
+          "kh": "ឆាត្រឡប់លឿនៗ ៣០ វិនាទីលើភ្លើងខ្លាំង ដួសដាក់ចានភ្លាមកុំទុកលើខ្ទះយូរ។",
+          "en": "Toss vigorously for 30 seconds on high heat and transfer to plate immediately."
+        }
+      ]
+    }
+  ],
+  "inboxInitial": [
+    {
+      "id": "msg-1",
+      "sender": "រៀមច្បង សុខា (DMC Year 4)",
+      "avatarColor": "#E63946",
+      "subject": {
+        "kh": "គន្លឹះទិញម្ហូបនៅផ្សារជិតសាលា",
+        "en": "Tips for Market Shopping Near Campus"
+      },
+      "preview": {
+        "kh": "សួស្តីប្អូនៗ! ទៅផ្សារម៉ោង ៦ល្ងាច បន្លែ និងសាច់លក់បញ្ចុះតម្លៃច្រើន...",
+        "en": "Hello junior students! Visiting the market around 6:00 PM gets you great vegetable discounts..."
+      },
+      "body": {
+        "kh": "សួស្តីប្អូនៗនិស្សិតទាំងអស់គ្នា! សម្រាប់អ្នកដែលនៅបន្ទប់ជួលជិតសាលា បើចង់សន្សំលុយ ចូរទៅផ្សារចន្លោះម៉ោង ៥:៣០ ដល់ ៦:៣០ ល្ងាច។ មីងៗលក់បន្លែ និងត្រី តែងតែលក់ថែម ឬលក់ឡាយឡុងក្នុងតម្លៃត្រឹមពាក់កណ្តាល ជួយឱ្យយើងសន្សំបានច្រើនសម្រាប់ទិញសៀវភៅរៀន!",
+        "en": "Hello fellow university students! If you are staying in a rented dorm room near campus and want to save budget, try hitting local markets between 5:30 PM and 6:30 PM. Vendors often discount fresh herbs, greens, and produce at half price before closing up!"
+      },
+      "date": "2026-10-21 17:30",
+      "unread": true
+    },
+    {
+      "id": "msg-2",
+      "sender": "ក្រុមការងារ ញ៉ាំអីគេ (Nham Ey Ke Team)",
+      "avatarColor": "#2A9D8F",
+      "subject": {
+        "kh": "ស្វាគមន៍មកកាន់ Prototype V1!",
+        "en": "Welcome to Prototype Version 1!"
+      },
+      "preview": {
+        "kh": "សូមស្វាគមន៍និស្សិតទាំងអស់គ្នា! អ្នកអាចស្វែងរកមុខម្ហូប និងផ្ញើសំណួរមកកាន់ពួកយើង...",
+        "en": "Welcome university students! You can search recipes and submit your cooking questions right here..."
+      },
+      "body": {
+        "kh": "សូមស្វាគមន៍មកកាន់កំណែ Prototype ទី ១ នៃគេហទំព័រ «ញ៉ាំអីគេ? Nham Ey Ke»។ គោលបំណងរបស់យើងគឺចង់ជួយនិស្សិតសាកលវិទ្យាល័យកម្ពុជាឱ្យចេះធ្វើម្ហូបញ៉ាំដោយខ្លួនឯង កាត់បន្ថយការញ៉ាំមីកញ្ចប់ ឬអាហារកែច្នៃ Ultra-processed foods និងទទួលបានសុខភាពល្អ!",
+        "en": "Welcome to Version 1 prototype of 'Nham Ey Ke?'! Our mission is to empower Cambodian university students to cook delicious, budget-conscious real food, reducing reliance on instant noodles and ultra-processed takeout."
+      },
+      "date": "2026-10-21 12:00",
+      "unread": false
+    }
+  ],
+  "uiText": {
+    "searchPlaceholder": {
+      "kh": "ស្វែងរកមុខម្ហូប ឬគ្រឿងផ្សំ (ឧ. ពងទា, ត្រីខ, ឆាខ្ញី)...",
+      "en": "Search recipe or ingredient (e.g. egg, canned fish, ginger)..."
+    },
+    "filterAll": {
+      "kh": "ទាំងអស់",
+      "en": "All"
+    },
+    "filterQuick": {
+      "kh": "ក្រោម ១៥ នាទី",
+      "en": "Under 15 Mins"
+    },
+    "filterCheap": {
+      "kh": "ក្រោម $1.50",
+      "en": "Under $1.50"
+    },
+    "filterRiceCooker": {
+      "kh": "ឆ្នាំងដាំបាយ",
+      "en": "Rice Cooker"
+    },
+    "threeOptionsTitle": {
+      "kh": "ជ្រើសរើសប្រភេទមុខម្ហូបខាងក្រោម 🍳",
+      "en": "Choose Cooking Category Below 🍳"
+    },
+    "viewRecipesBtn": {
+      "kh": "មើលមុខម្ហូប",
+      "en": "View Recipes"
+    },
+    "viewDetailsBtn": {
+      "kh": "មើលរបៀបធ្វើ & រូបភាព",
+      "en": "View Recipe & Photos"
+    },
+    "ingredientsTitle": {
+      "kh": "គ្រឿងផ្សំទិញនៅផ្សារ (Checklist)",
+      "en": "Market Ingredients Checklist"
+    },
+    "stepsTitle": {
+      "kh": "របៀបធ្វើជាជំហានៗ",
+      "en": "Step-by-Step Instructions"
+    },
+    "studentHackTitle": {
+      "kh": "គន្លឹះនិស្សិត (Student Dorm Hack) 💡",
+      "en": "Student Dorm Hack 💡"
+    },
+    "backToHome": {
+      "kh": "← ត្រឡប់ទៅទំព័រដើម",
+      "en": "← Back to Home"
+    },
+    "backToCategory": {
+      "kh": "← ត្រឡប់ទៅប្រភេទ",
+      "en": "← Back to Category"
+    },
+    "inboxNav": {
+      "kh": "ប្រអប់សារ",
+      "en": "Inbox"
+    },
+    "homeNav": {
+      "kh": "ទំព័រដើម",
+      "en": "Home"
+    },
+    "searchNav": {
+      "kh": "ស្រាវជ្រាវម្ហូប",
+      "en": "Search"
+    },
+    "sendQuestionTitle": {
+      "kh": "ផ្ញើសំណួរ ឬស្នើសុំមុខម្ហូបថ្មី",
+      "en": "Ask a Question or Request a Recipe"
+    },
+    "sendBtn": {
+      "kh": "ផ្ញើសារឥឡូវនេះ",
+      "en": "Send Message"
+    },
+    "sendSuccess": {
+      "kh": "សាររបស់អ្នកត្រូវបានបញ្ជូនជោគជ័យ!",
+      "en": "Your message was sent successfully!"
+    },
+    "yourNamePlaceholder": {
+      "kh": "ឈ្មោះរបស់អ្នក (និស្សិត)...",
+      "en": "Your name (student)..."
+    },
+    "yourMessagePlaceholder": {
+      "kh": "តើអ្នកចង់ឱ្យយើងបង្ហាញមុខម្ហូបអ្វីបន្ទាប់ទៀត? ឬមានចម្ងល់អ្វីក្នុងការធ្វើម្ហូប?",
+      "en": "What recipe would you like to see next? Or what cooking challenge are you facing?"
+    },
+    "noResults": {
+      "kh": "រកមិនឃើញមុខម្ហូបដែលត្រូវនឹងពាក្យស្វែងរកទេ!",
+      "en": "No recipes matched your search criteria!"
+    },
+    "recipesFound": {
+      "kh": "មុខម្ហូបត្រូវគ្នាចំនួន",
+      "en": "recipes found"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+.npm/
+
+# Local OS & Installer files (Do not upload to Git)
+*.pkg
+Antigravity.app/
+*.app/
+.DS_Store
+*/.DS_Store
+Thumbs.db
+*.log
+server.log
+
+# Video files (Strict policy: Use YouTube embeds instead)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Environment & Credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# Firebase cache
+.firebase/
+firebase-debug.log*

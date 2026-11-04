@@ -20,7 +20,7 @@ const RISKY_PATTERNS = [
   /\.env/i,
   /\.(mp4|mov|avi|mkv|webm)$/i,
   /^\.git(\/|$)/,
-  /^\.firebase/
+  /\.firebase\//
 ];
 
 function isRisky(filepath) {
